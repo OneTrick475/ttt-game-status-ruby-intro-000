@@ -19,3 +19,8 @@ def won?(board)
      position_taken?(board, comb[0])
   end
 end
+
+def full?(board)
+  board.all? do |index|
+    index == "X" || index == "O"
+end
